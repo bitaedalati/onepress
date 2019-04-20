@@ -32,12 +32,12 @@
        */
       ?>
 
-      <header role="banner" class="fp-active fixed-top shadow-section">
+      <header role="banner" class="fp-active fixed-top">
          <div class="container">
             <nav role="navigation" class="navbar  navbar-expand-lg px-0">
                <a accesskey="a" tabindex="0" href="/" class="navbar-brand">
                   <?php
-                  echo '<img width="180" alt="ubeac" src="' . get_template_directory_uri() . '/assets/images/logo.svg">';
+                  echo '<img width="190" alt="ubeac" src="' . get_template_directory_uri() . '/assets/images/logo.svg">';
                   ?>
                </a>
                <button type="button" tabindex="" data-toggle="collapse" data-target="#mainNavbarCollapse" class="btn navbar-toggler responsive-menue-close d-xl-none p-0">
@@ -82,4 +82,17 @@
 
          </div>
       </header>
+
+      <script>
+         window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+               let header = document.querySelector('header')
+               header.classList.add('shadow-section')
+            }
+            if (window.scrollY === 0) {
+               let header = document.querySelector('header')
+               header.classList.remove('shadow-section')
+            }
+         })
+      </script>
       <!-- .navbar -->
