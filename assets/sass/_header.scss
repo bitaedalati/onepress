@@ -1,0 +1,317 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+
+@include media-breakpoint-down(sm) {
+  .container {
+    width: 1400px;
+    max-width: 98% !important;
+  }
+}
+@include media-breakpoint-down(md) {
+  .container {
+    width: 1400px;
+    max-width: 90%;
+  }
+}
+@include media-breakpoint-up(lg) { 
+  .container {
+    width: 1300px;
+    max-width: 90%;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  text-rendering: optimizeSpeed !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+}
+
+.text-bold {
+  font-wieght: bolder !important;
+}
+
+p {
+  font-wieght: bold !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.9em !important;
+  color: $primaryColorLighten;
+}
+
+.h2 {
+  color: $primaryColorLighter;
+}
+
+p {
+  color: $gray-4;
+}
+
+.line-break {
+  height: 100px;
+}
+.line-break-80 {
+  height: 80px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.lead {
+  font-size: .9375em !important;
+  font-weight: 400 !important;
+  line-height: 2em !important;
+  color: $gray-4;
+}
+
+.navbar {
+  .navbar-brand {
+    img {
+      height: 50px;
+      @media (max-width: 340px) {
+        height: 40px;
+      }
+    }
+  }
+
+  .btn-primary {
+    width: 120px;
+    border-radius: $border-radius-25;
+    padding: .5em;
+    border: 0 !important;
+    background-color: $intro-title !important;
+    box-shadow: $box-shadow-fab;
+    font-weight: 300 !important;
+    &:hover {
+      background-color: darken($intro-title, 10) !important;
+    }
+    &:focus,
+    &:active {
+      background-color: darken($intro-title, 15) !important;
+      box-shadow: $box-shadow-fab !important;
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      color: $intro-title !important;
+      font-size: 1.125em;
+      font-weight: 400 !important;
+      &:hover {
+        color: darken($intro-title, 10) !important;
+      }
+      &:focus,
+      &:active {
+        color: darken($intro-title, 20) !important;
+      }
+    }
+  }
+  .responsive-menu {
+    z-index: 9999999;
+    a.nav-link {
+      font-size: 1.5em !important;
+    }
+  }
+
+}
+
+.pt-6 {
+  padding-top: 6em;
+}
+
+.section-bg {
+  background-color: $section-bg;
+}
+
+.fdb-icon {
+  width: 10em;
+}
+
+footer {
+  .svg-inline {
+    width: 1em;
+  }
+}
+
+.font-normal {
+  font-weight: normal !important;
+}
+
+.title-height {
+  height: 2.5em;
+  overflow: hidden;
+}
+
+.feature-height {
+  height: 10em;
+  overflow: hidden;
+}
+
+.feature-max-height {
+  height: 12em;
+  overflow: hidden;
+}
+
+.btn-fab {
+  width: 2.35em;
+  min-width: 2.35em;
+  height: 2.35em;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  line-height: 0 !important;
+  &:hover {
+    border: 0;
+  }
+}
+
+svg {
+  width: 3em;
+  height: 3em;
+  border: 1px solid $white;
+  padding: .5em;
+  text-align: center;
+  border-radius: 50%;
+  image {
+    width: 100%;
+    height: 100%;
+  }
+}
+  
+.responsive-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background: $white;
+  background: radial-gradient(ellipse at center,#fff 0,#f9f9f9 100%);
+  z-index: 10;
+}
+.navbar-toggler,
+.navbar-collapse {
+  img.menu-icon {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.navbar-nav.justify-content-center {
+  display: block;
+  position: absolute;
+  background: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-70%);
+  width: 100%;
+}
+
+.responsive-menu {
+  button {
+    display: block;
+    width: 2.2em;
+    height: 2.2em;
+    position: absolute;
+    background: transparent;
+    top: 1em;
+    right: 1.5em;
+    border: 0;
+  }
+}
+.responsive-menu--close {
+  button {
+    display: block;
+    width: 2.2em;
+    height: 2.2em;
+    position: absolute;
+    background: transparent;
+    top: .6em;
+    right: .5em;
+    border: 0;
+  }
+}
+
+.shadow-section {
+  box-shadow: $box-shadow-header;
+  margin-bottom: 2px;
+}
+
+.section-part--odd {
+  background: white;
+}
+
+.section-part--even {
+  background: $background-even;
+}
+
+
+.owl-theme .owl-nav [class*='owl-']{
+  position: absolute;
+  top: 30%;
+  background: none !important;
+  color: transparent;
+  @include media-breakpoint-down(md) {
+    position: relative;
+  }
+}
+.owl-prev {
+  left: -55px;
+  @include media-breakpoint-down(md) {
+    left: -10px;
+  }
+  &::before {
+    content: '';
+    background:url('/img/back.png');
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: cover;
+    opacity: .4;
+  }
+}
+.owl-next {
+  right: -55px;
+  @include media-breakpoint-down(md) {
+    right: -10px;
+  }
+  &::before {
+    content: '';
+    background:url('/img/next.png');
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: cover;
+    opacity: .4;
+  }
+}
+
+.owl-next,
+.owl-prev {
+  &:hover {
+    &::before {
+      opacity: .6;
+    }
+  }
+  &:focus,
+  &:active {
+    &::before {
+      opacity: .8;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &::before {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+

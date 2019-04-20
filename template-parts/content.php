@@ -33,6 +33,9 @@ if ( get_theme_mod( 'onepress_hide_thumnail_if_not_exists', false ) ) {
 	<div class="list-article-content">
 		<div class="list-article-meta">
 			<?php the_category( ' / ' ); ?>
+			<br/>
+			<br/>
+			<?php onepress_posted_on(); ?>
 		</div>
 		<header class="entry-header">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>

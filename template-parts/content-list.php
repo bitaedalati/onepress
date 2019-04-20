@@ -43,9 +43,11 @@ if ( get_theme_mod( 'onepress_hide_thumnail_if_not_exists', false ) ) {
 		 *
 		 * @since 2.1.0
 		 */
+		
 		if ( onepress_loop_get_prop( 'show_meta', true ) ) { ?>
 			<div class="list-article-meta">
 				<?php the_category( ' / ' ); ?>
+				<?php onepress_posted_on(); ?>
 			</div>
 		<?php } ?>
 		<?php
