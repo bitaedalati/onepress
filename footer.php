@@ -105,7 +105,13 @@ if (!$hide_footer) {
             <div class="w-100 order-3 order-lg-3 pt-5 pt-md-0">
                <div class="col-12 col-md-6 col-lg-8 float-left">
                   <p class="pr-0 pr-xl-5 mr-0 mr-xl-5 footer-link">
-                     <nav class="nav flex-row justify-content-around  justify-content-md-start"><a accesskey="y" class="nav-link active pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-5">Guide</a><a accesskey="v" target="_blank" href="https://hook.ubeac.io" class="nav-link  pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-5">Hook</a><a accesskey="z" class="nav-link  pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-5">Features</a><a accesskey="w" class="nav-link pl-0 pr-0">Devices</a></nav>
+                  <nav class="nav flex-row justify-content-around  justify-content-md-start">
+                     <a  href="/#features" class="nav-link active pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-5">Features</a>
+                     <a  href="/#devices" class="nav-link  pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-5">Devices</a>
+                     <a  href="/#consulting" class="nav-link pl-0 pr-0 pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-5">Consulting</a>
+                     <a  href="/blog" class="nav-link  pl-0 pr-0 pl-0 pr-3 pr-sm-5 pr-md-4 pr-lg-4">Blog</a>
+                     <a  target="_blank" href="https://hook.ubeac.io" class="nav-link  ">Hook</a>
+                  </nav>
                   </p>
                </div>
                <div class="col-12 col-md-6 col-lg-4 float-right">

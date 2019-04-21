@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
    <?php do_action('onepress_before_site_start'); ?>
-   <div id="page" class="blog-page hfeed site">
+   <div id="page" class="wordpress-page hfeed site">
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'onepress'); ?></a>
 
       <?php
@@ -55,34 +55,55 @@
                   <ul class="navbar-nav justify-content-center">
                      <li><a accesskey="b" tabindex="">
                            <?php
-                           echo '<img  class="mt-2 mb-5" width="120" height="50" alt="uBeac" src="' . get_template_directory_uri() . '/assets/images/logo.svg">';
+                           echo '<img  class="mt-2 mb-5" width="192"  alt="uBeac" src="' . get_template_directory_uri() . '/assets/images/logo.svg">';
                            ?>
-
                         </a></li>
-                     <li class="nav-item active"><a accesskey="c" tabindex="" class="nav-link">Features</a></li>
-                     <li class="nav-item"><a accesskey="d" tabindex="" class="nav-link">Devices</a></li>
-                     <li class="nav-item"><a accesskey="e" tabindex="" class="nav-link">Consulting</a></li>
-                     <li class="nav-item"><a accesskey="f" tabindex="" rel="noopener" target="_blank" href="https://hook.ubeac.io" class="nav-link">Hook</a></li>
+                     <li class="nav-item active">
+                        <a href="/#features" class="nav-link">
+                           Features
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/#devices" class="nav-link">
+                           Devices
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/#consulting" class="nav-link">
+                           Consulting
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a accesskey="f" tabindex="" rel="noopener" target="_blank" href="https://hook.ubeac.io" class="nav-link">
+                           Hook
+                        </a>
+                     </li>
                   </ul>
                </div>
-
                <div class="collapse navbar-collapse">
                   <ul class="navbar-nav justify-content-end ml-auto">
-                     <li class="nav-item ml-3"><a accesskey="g" tabindex="" class="nav-link">Features</a></li>
-                     <li class="nav-item ml-3"><a accesskey="h" tabindex="" class="nav-link">Devices</a></li>
-                     <li class="nav-item ml-3"><a accesskey="k" tabindex="" class="nav-link">Consulting</a></li>
+                     <li class="nav-item ml-3">
+                        <a href="/#features" class="nav-link">
+                           Features
+                        </a>
+                     </li>
+                     <li class="nav-item ml-3">
+                        <a href="/#devices" class="nav-link">
+                           Devices
+                        </a>
+                     </li>
+                     <li class="nav-item ml-3">
+                        <a href="/#consulting" class="nav-link">
+                           Consulting
+                        </a>
+                     </li>
                      <li class="nav-item ml-3"><a rel="noopener" target="_blank" href="https://hook.ubeac.io" class="nav-link">Hook</a></li>
                   </ul>
                   <a target="_blank" rel="noopener" accesskey="l" tabindex="" href="https://ui.ubeac.io" class="btn btn-primary ml-md-3 ml-lg-4">Sign in</a>
                </div>
-
             </nav>
-
-
-
          </div>
       </header>
-
       <script>
          window.addEventListener('scroll', function() {
             if (window.scrollY > 0) {

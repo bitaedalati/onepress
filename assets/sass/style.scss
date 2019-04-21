@@ -33,9 +33,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 8.0  Sections
 9.0  External Plugins
 
+
 --------------------------------------------------------------*/
 @import "variables";
-@import "theme";
+@import "ubeac_theme";
 
 /*--------------------------------------------------------------
 1.0 Reset
@@ -84,9 +85,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 9.0 External Plugins
 --------------------------------------------------------------*/
 @import "external_plugins";
+// Commented by uBeac
 // @import "bully";
+// Commented by uBeac
 // @import "gutenberg";
 
-@import "footer";
-@import "header";
+// uBeac Theme
 @import "ubeac";
