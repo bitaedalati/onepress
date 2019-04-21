@@ -19,6 +19,45 @@
    <link rel="profile" href="http://gmpg.org/xfn/11">
    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet" />
    <?php wp_head(); ?>
+   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicons/favicon.ico" />
+   <!-- Link in uBeac index.html -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta http-equiv="content-language" content="en"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-capable" content="yes"/>
+   <meta name="google-site-verification" content="wxwx3uDoA2ESGruKNqrOaDgQgtCwISyUvtVYzvpjmxc" />
+   <link rel="next" href="https://www.ubeac.io"/>
+   <meta name="description" content="uBeac is a powerful, versatile, and free IoT platform which is designed to help you easily build your real-time IoT idea.">
+   <meta property="description" content="uBeac is a powerful, versatile, and free IoT platform which is designed to help you easily build your real-time IoT idea.">
+
+   <meta name=dc.language content=UK>
+   <meta name=dc.source content=https://www.ubeac.io/>
+   <meta name=dc.relation content=https://www.ubeac.io/>
+   <meta name=dc.title content="uBeac a powerful and easy to use Internet of Things (IoT) platform">
+   <meta name=dc.description content="uBeac is a powerful, versatile, and free IoT platform which is designed to help you easily build your real-time IoT idea.">
+
+   <meta property="og:url" content="https://www.ubeac.io">
+   <meta property="og:title" content="uBeac a powerful and easy to use Internet of Things (IoT) platform">
+   <meta property="og:site_name" content="uBeac">
+   <meta property="og:description" content="uBeac is a powerful, versatile, and free IoT platform which is designed to help you easily build your real-time IoT idea.">
+   <meta property=og:locale content="en_GB">
+   <meta property=og:type content="website">
+   <meta property="og:image" content="https://ubeac.io/img/logo-social.png">
+   <meta property="og:image:secure_url" content="https://ubeac.io/img/logo-social.png">
+   <meta property="og:image:width" content="200">
+   <meta property="og:image:height" content="200">
+   <meta property="og:image:type" content="image/png">
+   <meta property="fb:app_id" content="835714826821351">
+
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:site" content="@ubeacio">
+   <meta name="twitter:title" content="uBeac a powerful and easy to use Internet of Things (IoT) platform">
+   <meta name="twitter:description" content="uBeac is a powerful, versatile, and free IoT platform which is designed to help you easily build your real-time IoT idea.">
+   <meta name="twitter:image" content="https://ubeac.io/img/logo-social.png"> 
 </head>
 
 <body <?php body_class(); ?>>
